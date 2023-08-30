@@ -10,7 +10,13 @@ public class Rectangulo {
 		this.base = base;
 	}
 
-	public Double getPerimetro() {
-		return this.base * 2 + this.altura * 2;
+	@Override
+	public String toString() {
+		return "Rectangulo [base=" + base + ", altura=" + altura + "]";
 	}
+	
+	public Double perimetro() {
+		return this.altura * 2 + this.base * 2;
+	}
+
 }
